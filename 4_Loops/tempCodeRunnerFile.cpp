@@ -562,64 +562,155 @@ int main()
 
     // 20  Butter fly pattern
 
-    int n;
-    cout << "Enter number: ";
-    cin >> n;
+    // *      *
+    // **    **
+    // ***  ***
+    // ********
+    // ********
+    // ***  ***
+    // **    **
+    // *      *
 
-    // upper portion
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            cout << "*";
-        }
-        for (int k = 0; k < (n - i - 1); k++)
-        {
-            cout << " ";
-        }
+    // int n;
+    // cout << "Enter number: ";
+    // cin >> n;
 
-        // cout << " ";
+    // // upper portion
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     for (int k = 0; k < (n - i - 1); k++)
+    //     {
+    //         cout << " ";
+    //     }
 
-        for (int k = 0; k < (n - i - 1); k++)
-        {
-            cout << " ";
-        }
-        for (int j = 0; j <= i; j++)
-        {
-            cout << "*";
-        }
-        cout << endl;
-    }
+    //     // cout << " ";
 
-    // lower portion
+    //     for (int k = 0; k < (n - i - 1); k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
 
-    for (int i = 0; i < n; i++)
-    {
+    // // lower portion
 
-        for (int j = 0; j < n - i; j++)
-        {
-            cout << "*";
-        }
-        for (int k = 0; k < i; k++)
-        {
-            cout << " ";
-        }
+    // for (int i = 0; i < n; i++)
+    // {
 
-        // cout << " ";
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     for (int k = 0; k < i; k++)
+    //     {
+    //         cout << " ";
+    //     }
 
-        for (int k = 0; k < i; k++)
-        {
-            cout << " ";
-        }
-        for (int j = 0; j < n - i; j++)
-        {
-            cout << "*";
-        }
+    //     // cout << " ";
 
-        cout << endl;
-    }
+    //     for (int k = 0; k < i; k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+
+    //     cout << endl;
+    // }
 
     // ------------------------------------------
+
+    // 21. Hollow triangle-1
+
+    // *
+    // * *
+    // *  *
+    // *   *
+    // * * * *
+
+    // int n = 5;
+    // // cout << "Enter number: ";
+    // // cin >> n;
+
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     for (int j = 0; j < 1; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     if (i != 0)
+    //     {
+
+    //         for (int k = 0; k < i; k++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     cout << "* ";
+    // }
+    // ------------------------------------------
+
+    // 22. Hollow triangle-2
+
+    //      *
+    //    * *
+    //   *  *
+    //  *   *
+    // ******
+
+    int n = 5;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (i != n - 1)
+        {
+            // space-1
+            for (int j = 0; j < (n - i - 1); j++)
+            {
+                cout << " ";
+            }
+            // pattern-1
+            if (i != 0)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
+
+            // space-2
+            for (int k = 0; k < i; k++)
+            {
+                cout << " ";
+            }
+            // pattern-2
+            cout << "*";
+
+            cout << endl;
+        }
+    }
+
+    for (int i = 0; i <= n; i++)
+    {
+        cout << "*";
+    }
 
     return 0;
 }
