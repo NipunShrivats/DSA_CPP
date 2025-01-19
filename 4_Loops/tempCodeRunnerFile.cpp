@@ -485,34 +485,34 @@ int main()
     //    *   *
     //   * * * *
 
-    // int n;
-    // cout << "Enter number: ";
-    // cin >> n;
+    int n;
+    cout << "Enter number: ";
+    cin >> n;
 
-    // for (int i = 0; i < n - 1; i++)
-    // {
-    //     // space-1
-    //     for (int j = i; j < n - 1; j++)
-    //     {
-    //         cout << " ";
-    //     }
-    //     cout << "*";
-    //     // space-2
-    //     if (i != 0)
-    //     {
-    //         for (int k = 0; k < ((2 * i) - 1); k++)
-    //         {
-    //             cout << " ";
-    //         }
-    //         cout << "*";
-    //     }
-    //     cout << endl;
-    // }
-    // // last line
-    // for (int l = 0; l < n; l++)
-    // {
-    //     cout << "* ";
-    // }
+    for (int i = 0; i < n - 1; i++)
+    {
+        // space-1
+        for (int j = i; j < n - 1; j++)
+        {
+            cout << " ";
+        }
+        cout << "*";
+        // space-2
+        if (i != 0)
+        {
+            for (int k = 0; k < ((2 * i) - 1); k++)
+            {
+                cout << " ";
+            }
+            cout << "*";
+        }
+        cout << endl;
+    }
+    // last line
+    for (int l = 0; l < n; l++)
+    {
+        cout << "* ";
+    }
 
     // ------------------------------------------
 
