@@ -674,40 +674,101 @@ int main()
     //  *   *
     // ******
 
+    // int n = 5;
+
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (i != n - 1)
+    //     {
+    //         // space-1
+    //         for (int j = 0; j < (n - i - 1); j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // pattern-1
+    //         if (i != 0)
+    //         {
+    //             cout << "*";
+    //         }
+    //         else
+    //         {
+    //             cout << " ";
+    //         }
+
+    //         // space-2
+    //         for (int k = 0; k < i; k++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // pattern-2
+    //         cout << "*";
+
+    //         cout << endl;
+    //     }
+    // }
+
+    // for (int i = 0; i <= n; i++)
+    // {
+    //     cout << "*";
+    // }
+
+    // ------------------------------------------
+
+    // 23.
     int n = 5;
 
-    for (int i = 0; i < n; i++)
+    // top part//
+
+    // part-1
+    for (int i = 0; i <= n + 1; i++)
     {
-        if (i != n - 1)
-        {
-            // space-1
-            for (int j = 0; j < (n - i - 1); j++)
-            {
-                cout << " ";
-            }
-            // pattern-1
-            if (i != 0)
-            {
-                cout << "*";
-            }
-            else
-            {
-                cout << " ";
-            }
-
-            // space-2
-            for (int k = 0; k < i; k++)
-            {
-                cout << " ";
-            }
-            // pattern-2
-            cout << "*";
-
-            cout << endl;
-        }
+        cout << "*";
     }
 
-    for (int i = 0; i <= n; i++)
+    for (int i = 0; i < n - 1; i++)
+    {
+        if (i != 0)
+        {
+            // part-2 space
+            for (int j = 0; j < i; j++)
+            {
+                cout << " ";
+            }
+            // part-3 pattern
+            cout << "*";
+        }
+
+        // // part-4 space
+        if (i != 0 && i != n - 2)
+        {
+            for (int j = 0; j < 2 * (n - i) - 5; j++)
+            {
+                cout << " ";
+            }
+            // part-5 pattern
+            cout << "*";
+        }
+        cout << endl;
+    }
+    // // Bottom Part //
+    for (int i = 0; i < n - 3; i++)
+    {
+        //
+        for (int j = 0; j < n - 3 - i; j++)
+        {
+            cout << " ";
+        }
+        cout << "*";
+
+        //
+        for (int j = 0; j <= (2 * i); j++)
+        {
+            cout << " ";
+        }
+        cout << "*";
+        cout << endl;
+    }
+    for (int i = 0; i <= n + 1; i++)
     {
         cout << "*";
     }

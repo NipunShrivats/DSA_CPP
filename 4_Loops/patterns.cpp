@@ -712,5 +712,75 @@ int main()
     //     cout << "*";
     // }
 
+    // ------------------------------------------
+
+    // 23. hour glass
+
+    // *******
+    //  *   *
+    //   * *
+    //    *
+    //   * *
+    //  *   *
+    // *******
+
+    // int n = 5;
+
+    // // top part//
+
+    // // part-1
+    // for (int i = 0; i <= n + 1; i++)
+    // {
+    //     cout << "*";
+    // }
+
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     if (i != 0)
+    //     {
+    //         // part-2 space
+    //         for (int j = 0; j < i; j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // part-3 pattern
+    //         cout << "*";
+    //     }
+
+    //     // // part-4 space
+    //     if (i != 0 && i != n - 2)
+    //     {
+    //         for (int j = 0; j < 2 * (n - i) - 5; j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // part-5 pattern
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    // // // Bottom Part //
+    // for (int i = 0; i < n - 3; i++)
+    // {
+    //     //
+    //     for (int j = 0; j < n - 3 - i; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+
+    //     //
+    //     for (int j = 0; j <= (2 * i); j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+    //     cout << endl;
+    // }
+    // for (int i = 0; i <= n + 1; i++)
+    // {
+    //     cout << "*";
+    // }
+
     return 0;
 }
