@@ -953,44 +953,67 @@ int main()
     //   * *
     //  *   *
 
-    int n = 5;
-    // top part//
+    // int n = 5;
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     if (i != 0)
+    //     {
+    //         // part-2 space
+    //         for (int j = 0; j < i; j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // part-3 pattern
+    //         cout << "*";
+    //     }
+    //     // // part-4 space
+    //     if (i != 0 && i != n - 2)
+    //     {
+    //         for (int j = 0; j < 2 * (n - i) - 5; j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //         // part-5 pattern
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    // // // Bottom Part //
+    // for (int i = 0; i < n - 3; i++)
+    // {
+    //     //
+    //     for (int j = 0; j < n - 3 - i; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+    //     //
+    //     for (int j = 0; j <= (2 * i); j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+    //     cout << endl;
+    // }
 
+    // ------------------------------------------
+
+    // 31.
+
+    //       *
+    //       *
+    //       *
+    // * * * * * * *
+    //       *
+    //       *
+    //       *
+
+    int n = 4;
+
+    // First
     for (int i = 0; i < n - 1; i++)
     {
-        if (i != 0)
-        {
-            // part-2 space
-            for (int j = 0; j < i; j++)
-            {
-                cout << " ";
-            }
-            // part-3 pattern
-            cout << "*";
-        }
-        // // part-4 space
-        if (i != 0 && i != n - 2)
-        {
-            for (int j = 0; j < 2 * (n - i) - 5; j++)
-            {
-                cout << " ";
-            }
-            // part-5 pattern
-            cout << "*";
-        }
-        cout << endl;
-    }
-    // // Bottom Part //
-    for (int i = 0; i < n - 3; i++)
-    {
-        //
-        for (int j = 0; j < n - 3 - i; j++)
-        {
-            cout << " ";
-        }
-        cout << "*";
-        //
-        for (int j = 0; j <= (2 * i); j++)
+        for (int j = 0; j < n + 2; j++)
         {
             cout << " ";
         }
@@ -998,6 +1021,25 @@ int main()
         cout << endl;
     }
 
+    // middle
+    for (int i = 0; i < n + 3; i++)
+    {
+        cout << "*" << " ";
+    }
+    cout << endl;
+
+    // Last
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n + 2; j++)
+        {
+            cout << " ";
+        }
+        cout << "*";
+        cout << endl;
+    }
+
+    // ------------------------------------------
     // ------------------------------------------
     return 0;
 }
