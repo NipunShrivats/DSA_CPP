@@ -89,6 +89,8 @@ int main()
     // }
     // ------------------------------------------
 
+    // ------------------------------------------
+
     // 5. charactes in order
 
     // ABCD
@@ -117,6 +119,7 @@ int main()
     // * *
     // * * *
     // * * * *
+
     // int n;
     // cout << "Enter no. of rows: ";
     // cin >> n;
@@ -141,7 +144,6 @@ int main()
     // int n, num = 1;
     // cout << "Enter no. of rows: ";
     // cin >> n;
-
     // for (int i = 1; i <= n; i++)
     // {
     //     for (int j = 1; j <= i; j++)
@@ -187,7 +189,6 @@ int main()
     // int n;
     // cout << "Enter no. of rows: ";
     // cin >> n;
-
     // for (int i = 1; i <= n; i++)
     // {
     //     for (int j = i; j >= 1; j--)
@@ -210,7 +211,6 @@ int main()
     // cout << "Enter no. of rows: ";
     // cin >> n;
     // int num = 1;
-
     // for (int i = 1; i <= n; i++)
     // {
     //     for (int j = 1; j <= i; j++)
@@ -234,15 +234,12 @@ int main()
     // cout << "Enter the number: ";
     // cin >> num;
     // int count = 1;
-
     // for (int i = 0; i < num; i++)
     // {
-
     //     for (int j = 0; j < i; j++)
     //     {
     //         cout << " ";
     //     }
-
     //     for (int j = num; j > i; j--)
     //     {
     //         cout << count;
@@ -265,15 +262,12 @@ int main()
     // cout << "Enter the number: ";
     // cin >> num;
     // int count = 1;
-
     // for (int i = 0; i < num; i++)
     // {
-
     //     for (int j = 0; j < i; j++)
     //     {
     //         cout << " ";
     //     }
-
     //     for (int j = num; j > i; j--)
     //     {
     //         cout << count << " ";
@@ -296,15 +290,12 @@ int main()
     // cout << "Enter the number: ";
     // cin >> num;
     // int count = num;
-
     // for (int i = 0; i < num; i++)
     // {
-
     //     for (int j = 0; j < i; j++)
     //     {
     //         cout << " ";
     //     }
-
     //     for (int k = num; k > i; k--)
     //     {
     //         cout << count << " ";
@@ -325,10 +316,8 @@ int main()
     // cout << "Enter the number: ";
     // cin >> num;
     // int count = num;
-
     // for (int i = 1; i <= num; i++)
     // {
-
     //     for (int j = 1; j <= count; j++)
     //     {
     //         cout << " ";
@@ -338,13 +327,12 @@ int main()
     //         cout << i << " ";
     //     }
     //     count--;
-
     //     cout << endl;
     // }
 
     // ------------------------------------------
 
-    // 15
+    // 15.
 
     //       1
     //     2 2 2
@@ -354,7 +342,6 @@ int main()
     // int n;
     // cout << "Enter number: ";
     // cin >> n;
-
     // for (int i = 0; i < n; i++)
     // {
     //     // // space
@@ -362,13 +349,11 @@ int main()
     //     {
     //         cout << " ";
     //     }
-
     //     // // no. order 1
     //     for (int k = 1; k <= i + 1; k++)
     //     {
     //         cout << i + 1;
     //     }
-
     //     // // no. order 2
     //     for (int l = 1; l <= i; l++)
     //     {
@@ -376,6 +361,8 @@ int main()
     //     }
     //     cout << endl;
     // }
+    // ------------------------------------------
+
     // ------------------------------------------
 
     // 16.
@@ -396,13 +383,11 @@ int main()
     //     {
     //         cout << "*";
     //     }
-
     //     // no. set-1
     //     for (int k = 1; k <= i + 1; k++)
     //     {
     //         cout << k;
     //     }
-
     //     // no. set-2
     //     for (int l = i; l >= 1; l--)
     //     {
@@ -427,7 +412,6 @@ int main()
     // int n;
     // cout << "Enter number: ";
     // cin >> n;
-
     // // upper part
     // for (int i = 0; i < n; i++)
     // {
@@ -438,7 +422,6 @@ int main()
     //     }
     //     // star-1
     //     cout << "*";
-
     //     // spaces-2
     //     if (i != 0)
     //     {
@@ -449,7 +432,6 @@ int main()
     //         // star-2
     //         cout << "*";
     //     }
-
     //     cout << endl;
     // }
 
@@ -488,7 +470,6 @@ int main()
     // int n;
     // cout << "Enter number: ";
     // cin >> n;
-
     // for (int i = 0; i < n - 1; i++)
     // {
     //     // space-1
@@ -526,29 +507,24 @@ int main()
     // int n;
     // cout << "Enter number: ";
     // cin >> n;
-
     // // part-1 //
     // for (int l = 0; l < n; l++)
     // {
     //     cout << "* ";
     // }
     // cout << endl;
-
     // // Part-2 //
     // for (int i = 0; i < n - 1; i++)
     // {
-
     //     // space-1
     //     for (int j = 0; j <= i; j++)
     //     {
     //         cout << " ";
     //     }
     //     cout << "*";
-
     //     // space-2
     //     if (i != n - 2)
     //     {
-
     //         for (int j = 0; j < (2 * (n - 2 - i) - 1); j++)
     //         {
     //             cout << " ";
@@ -574,7 +550,6 @@ int main()
     // int n;
     // cout << "Enter number: ";
     // cin >> n;
-
     // // upper portion
     // for (int i = 0; i < n; i++)
     // {
@@ -586,9 +561,7 @@ int main()
     //     {
     //         cout << " ";
     //     }
-
     //     // cout << " ";
-
     //     for (int k = 0; k < (n - i - 1); k++)
     //     {
     //         cout << " ";
@@ -599,12 +572,9 @@ int main()
     //     }
     //     cout << endl;
     // }
-
     // // lower portion
-
     // for (int i = 0; i < n; i++)
     // {
-
     //     for (int j = 0; j < n - i; j++)
     //     {
     //         cout << "*";
@@ -613,9 +583,7 @@ int main()
     //     {
     //         cout << " ";
     //     }
-
     //     // cout << " ";
-
     //     for (int k = 0; k < i; k++)
     //     {
     //         cout << " ";
@@ -624,7 +592,6 @@ int main()
     //     {
     //         cout << "*";
     //     }
-
     //     cout << endl;
     // }
 
@@ -641,7 +608,6 @@ int main()
     // int n = 5;
     // // cout << "Enter number: ";
     // // cin >> n;
-
     // for (int i = 0; i < n - 1; i++)
     // {
     //     for (int j = 0; j < 1; j++)
@@ -650,7 +616,6 @@ int main()
     //     }
     //     if (i != 0)
     //     {
-
     //         for (int k = 0; k < i; k++)
     //         {
     //             cout << " ";
@@ -659,11 +624,11 @@ int main()
     //     }
     //     cout << endl;
     // }
-
     // for (int i = 0; i < n - 1; i++)
     // {
     //     cout << "* ";
     // }
+
     // ------------------------------------------
 
     // 22. Hollow triangle-2
@@ -675,7 +640,6 @@ int main()
     // ******
 
     // int n = 5;
-
     // for (int i = 0; i < n; i++)
     // {
     //     if (i != n - 1)
@@ -694,7 +658,6 @@ int main()
     //         {
     //             cout << " ";
     //         }
-
     //         // space-2
     //         for (int k = 0; k < i; k++)
     //         {
@@ -702,11 +665,9 @@ int main()
     //         }
     //         // pattern-2
     //         cout << "*";
-
     //         cout << endl;
     //     }
     // }
-
     // for (int i = 0; i <= n; i++)
     // {
     //     cout << "*";
@@ -725,15 +686,12 @@ int main()
     // *******
 
     // int n = 5;
-
     // // top part//
-
     // // part-1
     // for (int i = 0; i <= n + 1; i++)
     // {
     //     cout << "*";
     // }
-
     // for (int i = 0; i < n - 1; i++)
     // {
     //     if (i != 0)
@@ -746,7 +704,6 @@ int main()
     //         // part-3 pattern
     //         cout << "*";
     //     }
-
     //     // // part-4 space
     //     if (i != 0 && i != n - 2)
     //     {
@@ -768,7 +725,6 @@ int main()
     //         cout << " ";
     //     }
     //     cout << "*";
-
     //     //
     //     for (int j = 0; j <= (2 * i); j++)
     //     {
@@ -845,7 +801,6 @@ int main()
     //     *
 
     // int n = 5;
-
     // for (int i = 0; i < n; i++)
     // {
     //     for (int j = 0; j < n - i - 1; j++)
@@ -910,36 +865,139 @@ int main()
 
     // 28. Left Arrow
 
+    //     *
+    //    **
+    //   ***
+    //  ****
+    // *****
+    //  ****
+    //   ***
+    //    **
+    //     *
+
+    // int n = 5;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i - 1; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j < i + 1; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if (i != n - 1)
+    //     {
+    //         for (int j = 0; j < i + 1; j++)
+    //         {
+    //             cout << " ";
+    //         }
+    //     }
+    //     for (int j = 0; j < n - i - 1; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+
+    // ------------------------------------------
+
+    // 29. Hollow square
+
+    // * * * * *
+    // *       *
+    // *       *
+    // *       *
+    // * * * * *
+
+    // int n = 5;
+    // // first line
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << "*" << " ";
+    // }
+    // cout << endl;
+    // // center
+    // for (int i = 0; i < n - 2; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (j != 0 && j != n - 1)
+    //         {
+    //             cout << " " << " ";
+    //         }
+    //         else
+    //         {
+    //             cout << "*" << " ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+    // // last line
+    // for (int i = 0; i < n; i++)
+    // {
+    //     cout << "*" << " ";
+    // }
+
+    // ------------------------------------------
+
+    // 30. cross pattern
+
+    //  *   *
+    //   * *
+    //    *
+    //   * *
+    //  *   *
+
     int n = 5;
-    for (int i = 0; i < n; i++)
+    // top part//
+
+    for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < n - i - 1; j++)
+        if (i != 0)
         {
-            cout << " ";
+            // part-2 space
+            for (int j = 0; j < i; j++)
+            {
+                cout << " ";
+            }
+            // part-3 pattern
+            cout << "*";
         }
-        for (int j = 0; j < i + 1; j++)
+        // // part-4 space
+        if (i != 0 && i != n - 2)
         {
+            for (int j = 0; j < 2 * (n - i) - 5; j++)
+            {
+                cout << " ";
+            }
+            // part-5 pattern
             cout << "*";
         }
         cout << endl;
     }
-    for (int i = 0; i < n; i++)
+    // // Bottom Part //
+    for (int i = 0; i < n - 3; i++)
     {
-        if (i != n - 1)
+        //
+        for (int j = 0; j < n - 3 - i; j++)
         {
-            for (int j = 0; j < i + 1; j++)
-            {
-                cout << " ";
-            }
+            cout << " ";
         }
-        for (int j = 0; j < n - i - 1; j++)
+        cout << "*";
+        //
+        for (int j = 0; j <= (2 * i); j++)
         {
-            cout << "*";
+            cout << " ";
         }
+        cout << "*";
         cout << endl;
     }
 
     // ------------------------------------------
-
     return 0;
 }
