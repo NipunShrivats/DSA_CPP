@@ -998,7 +998,7 @@ int main()
 
     // ------------------------------------------
 
-    // 31.
+    // 31. plus
 
     //       *
     //       *
@@ -1008,38 +1008,175 @@ int main()
     //       *
     //       *
 
-    int n = 4;
+    // int n = 4;
+    // // First
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     for (int j = 0; j < n + 2; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+    //     cout << endl;
+    // }
 
-    // First
+    // // middle
+    // for (int i = 0; i < n + 3; i++)
+    // {
+    //     cout << "*" << " ";
+    // }
+    // cout << endl;
+
+    // // Last
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     for (int j = 0; j < n + 2; j++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     cout << "*";
+    //     cout << endl;
+    // }
+
+    // ------------------------------------------
+
+    // 32  Butter fly pattern - a little different
+
+    // *      *
+    // **    **
+    // ***  ***
+    // ********
+    // ***  ***
+    // **    **
+    // *      *
+
+    // int n;
+    // cout << "Enter number: ";
+    // cin >> n;
+    // // upper portion
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     for (int k = 0; k < (n - i - 1); k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     // cout << " ";
+    //     for (int k = 0; k < (n - i - 1); k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j <= i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    // // lower portion
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     for (int k = 0; k < i; k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     // cout << " ";
+    //     for (int k = 0; k < i; k++)
+    //     {
+    //         cout << " ";
+    //     }
+    //     for (int j = 0; j < n - i; j++)
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl;
+    // }
+    // ------------------------------------------
+
+    // ------------------------------------------
+
+    // 33. swastik
+
+    // *   *****
+    // *   *
+    // *   *
+    // *   *
+    // * * * * *
+    //     *   *
+    //     *   *
+    //     *   *
+    // *****   *
+
+    int n = 5;
     for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < n + 2; j++)
+        // 1st part
+        cout << "*";
+
+        for (int k = 0; k < n - 2; k++)
         {
             cout << " ";
         }
+
         cout << "*";
+
+        // 2nd part
+        if (i == 0)
+        {
+
+            for (int j = 0; j <= n - 2; j++)
+            {
+                cout << "*";
+            }
+        }
         cout << endl;
     }
 
-    // middle
-    for (int i = 0; i < n + 3; i++)
+    // 3rd part
+    for (int i = 0; i < n; i++)
     {
-        cout << "*" << " ";
+        cout << "* ";
     }
     cout << endl;
 
-    // Last
+    // 4th part
     for (int i = 0; i < n - 1; i++)
     {
-        for (int j = 0; j < n + 2; j++)
+        if (i != n - 2)
+        {
+
+            for (int j = 0; j < n - 1; j++)
+            {
+                cout << " ";
+            }
+        }
+        else
+        {
+            for (int j = 0; j < n - 1; j++)
+            {
+                cout << "*";
+            }
+        }
+        cout << "*";
+
+        for (int m = 0; m < n - 2; m++)
         {
             cout << " ";
         }
+
         cout << "*";
         cout << endl;
     }
 
     // ------------------------------------------
-    // ------------------------------------------
+
     return 0;
+
+    // ------------------------------------------
 }
