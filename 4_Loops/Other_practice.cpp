@@ -91,17 +91,16 @@ int main()
 
     // 5. factorial
 
-    int num, fact = 1, i = 1;
-    cout << "Enter a number: ";
-    cin >> num;
+    // int num, fact = 1, i = 1;
+    // cout << "Enter a number: ";
+    // cin >> num;
 
-    while (i <= num)
-    {
-        fact *= i;
-        i++;
-        // cout << fact << endl;
-    }
-    cout << fact;
+    // while (i <= num)
+    // {
+    //     fact *= i;
+    //     i++;
+    // }
+    // cout << fact;
 
     // ------------------------------------------------
 
