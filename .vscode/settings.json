@@ -4,6 +4,9 @@
     ".env*": "dotenv",
     "*.rmd": "markdown",
     "ostream": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "array": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp"
   }
 }

@@ -63,7 +63,7 @@ int main()
 
     // 4. Check for armstrong Number. //
     // eg- 153 --> 1^3 + 5^3 + 3^3 = 153.(n=3)
-    // 1634 --> 1^4 + 6^4 + 3^4 + 4^4;
+    // 1634 --> 1^4 + 6^4 + 3^4 + 4^4; (n=4)
 
     // int num, rem = 0, cube = 0, sum = 0;
     // cout << "Enter number: ";
@@ -80,11 +80,11 @@ int main()
 
     // if (temp == sum)
     // {
-    //     cout << "The numer is Pallindrome";
+    //     cout << "The numer is Armstrong";
     // }
     // else
     // {
-    //     cout << "The numer is not Pallindrome";
+    //     cout << "The numer is not Armstrong";
     // }
 
     // ------------------------------------------------
@@ -104,5 +104,56 @@ int main()
 
     // ------------------------------------------------
 
+    // Ques
+    // 6. WAP swap 2 nos.
+
+    // int a, b, temp;
+    // cout << "Enter 1st no: ";
+    // cin >> a;
+    // cout << "Enter 2nd no: ";
+    // cin >> b;
+
+    // cout << "value of a & b " << a << " & " << b << endl;
+
+    // temp = a;
+    // a = b;
+    // b = temp;
+
+    // cout << "value of a & b " << a << " & " << b;
+
+    // -----------------------------------------------
+    // -----------------------------------------------
+
+    // 7. WAP sort values of array [without using array.sort for  JS] - assending and descending
+
+    int arr[] = {10, 80, 47, 33, 2, 43, 44, 255};
+    int size = (sizeof(arr) / sizeof(arr[0]));
+
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            // if (arr[j] > arr[j + 1]) // Ascending
+            if (arr[j] < arr[j + 1]) // Descending
+            {
+                swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
     return 0;
+}
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
+
+void swap(int a, int b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
