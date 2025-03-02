@@ -1176,40 +1176,27 @@ int main()
 
     // ------------------------------------------
 
-    // 34
+    
+    string arr[] = {"r", "a", "h", "u", "l"};
+    int size = sizeof(arr) / sizeof(arr[1]);
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << arr[j] << " ";
+        }
+        cout << endl;
+    }
+    for (int i = 0; i < size; i++)
+    {
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            cout << arr[j] << " ";
+        }
+        cout << endl;
+    }
 
-    // r
-    // r a
-    // r a h
-    // r a h u
-    // r a h u l
-    // r a h u
-    // r a h
-    // r a
-    // r
-
-    // string arr[] = {"r", "a", "h", "u", "l"};
-    // char arr[] = {'r', 'a', 'h', 'u', 'l'};
-
-    // int size = sizeof(arr) / sizeof(arr[1]);
-    // for (int i = 0; i < size; i++)
-    // {
-    //     for (int j = 0; j <= i; j++)
-    //     {
-    //         cout << arr[j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-    // for (int i = 0; i < size; i++)
-    // {
-    //     for (int j = 0; j < size - i - 1; j++)
-    //     {
-    //         cout << arr[j] << " ";
-    //     }
-    //     cout << endl;
-    // }
-
-    // ------------------------------------------
     return 0;
+
     // ------------------------------------------
 }

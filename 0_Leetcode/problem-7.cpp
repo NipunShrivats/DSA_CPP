@@ -7,19 +7,12 @@ using namespace std;
 
 int sqRoot(int x)
 {
-    int num = 0;
-    if (num > INT_MAX || num < INT_MIN)
+    long num = 0;
+    while (num * num <= x)
     {
-        return 0;
+        num++;
     }
-    else
-    {
-        while (num * num <= x)
-        {
-            num++;
-        }
-        return num - 1;
-    }
+    return num - 1;
 }
 
 int main()
