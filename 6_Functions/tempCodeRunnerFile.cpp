@@ -359,27 +359,27 @@ using namespace std;
 
 // 21. sum of 1st and last digit fo a number
 
-// int firstLastSum(int num)
-// {
-//     int num1 = num, rem1;
-//     while (num1 > 0)
-//     {
-//         rem1 = num1 % 10;
-//         num1 /= 10;
-//     }
+int firstLastSum(int num)
+{
+    int num1 = num, rem1;
+    while (num1 > 0)
+    {
+        rem1 = num1 % 10;
+        num1 /= 10;
+    }
 
-//     int num2 = num, rem2;
-//     while (num2 > 0)
-//     {
-//         rem2 = num2 % 10;
-//         num2 /= 10;
-//         if (rem2 < 10)
-//         {
-//             break;
-//         }
-//     }
-//     cout << "Sum:" << rem1 + rem2;
-// }
+    int num2 = num, rem2;
+    while (num2 > 0)
+    {
+        rem2 = num2 % 10;
+        num2 /= 10;
+        if (rem2 < 10)
+        {
+            break;
+        }
+    }
+    cout << "Sum:" << rem1 + rem2;
+}
 
 // ----------------------------
 
@@ -463,8 +463,8 @@ int main()
     // //// 20.
     // firstLast(987);
     // -------------------------
-    // //// 21.
-    // firstLastSum(11101);
+    // //// 20.
+    firstLastSum(11101);
     // -------------------------
     return 0;
 }
