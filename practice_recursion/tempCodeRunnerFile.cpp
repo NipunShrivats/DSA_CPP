@@ -17,34 +17,13 @@ using namespace std;
 //     // 3. next
 //     return Natural(n - 1);
 // }
-
-// ---------- Backtracking
-// void Natural(int n)
-// {
-//     cout << "function caling for " << n << endl;
-//     if (n == 0)
-//     {
-//         return;
-//     }
-//     Natural(n - 1);
-//     cout << n << endl; //Backtracking
-// }
-
-// int main()
-// {
-//     Natural(10);
-// }
-
-// ---------
 void Natural(int n)
 {
     cout << "function caling for " << n << endl;
-    if (n == 1) // optimizing last rcursive call
+    if (n == 0)
     {
-        cout << n << endl;
         return;
     }
-
     Natural(n - 1);
     cout << n << endl;
 }
