@@ -20,4 +20,5 @@ int main()
 {
     cout << convert('A');
     cout << convert('a');
+    return 0;
 }
