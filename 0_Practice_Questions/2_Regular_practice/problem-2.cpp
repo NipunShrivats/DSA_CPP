@@ -1,5 +1,8 @@
-// 1. Convert capital to small small to capital
-// a->A, A->a
+// 2. Armstrong Number
+
+// 1-9 all
+// 153 -> 1^3 + 5^3 + 3^3 = 153 // 3 digits
+// 8208 -> 8^4 + 2^4 + 0^4 + 8^4= 8208 // 4 digits
 
 #include <iostream>
 using namespace std;
