@@ -19,7 +19,7 @@ bool isThree(int n)
         }
         n /= 4;
     }
-    return n == 1; // no value less than 3 is allowed except 1
+    return n == 1;
 }
 
 int main()
